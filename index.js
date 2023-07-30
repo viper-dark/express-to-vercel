@@ -36,9 +36,10 @@ const handler = async () => {
   }
 };
 
-await handler()
-   console.log("Done")
-    res.sendFile('index.html', {root: path.join(__dirname, 'public')});
+handler().then(() => {console.log("Done")
+                       res.sendFile('index.html', {root: path.join(__dirname, 'public')});
+                     });
+   
 })
 
 app.listen(process.env.PORT || 3000);
