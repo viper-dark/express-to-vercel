@@ -37,7 +37,9 @@ const handler = async () => {
 };
 
 handler().then(() => {console.log("Done")
-                       res.sendFile('index.html', {root: path.join(__dirname, 'public')});
+                       res..status(200).send(
+        "ERROR no link or data found for match "
+      );
                      });
    
 })
