@@ -37,7 +37,7 @@ const handler = async () => {
 };
 
 handler().then(() => {console.log("Done")
-                       res..status(200).send(
+                       res.status(200).send(
         "ERROR no link or data found for match "
       );
                      });
