@@ -6,7 +6,7 @@ const chromium = require("@sparticuz/chromium-min");
 
 app.use(express.static('public'))
 
-app.get('/', (req, res) => {
+app.get('/', async (req, res) => {
  
 
 const handler = async () => {
