@@ -25,8 +25,8 @@ app.get('/', async (req, res) => {
 
       await page.goto("https://www.google.com/", { waitUntil: "networkidle0" });
 
-      console.log("Chromium:", await browser.version());
-      console.log("Page Title:", await page.title());
+      console.log("Chromium: vvvvvvvvvvvvvvvvvvvvvvvv", await browser.version());
+      console.log("Page Title isssssssssssssssssssssssssssss:", await page.title());
 
       await page.close();
 
