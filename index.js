@@ -36,7 +36,8 @@ const handler = async () => {
   }
 };
 
-handler().then(() => console.log("Done"));
+await handler()
+   console.log("Done")
     res.sendFile('index.html', {root: path.join(__dirname, 'public')});
 })
 
